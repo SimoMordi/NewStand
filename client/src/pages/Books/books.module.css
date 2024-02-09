@@ -3,5 +3,38 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin: 20px 0;
+  margin: auto;
+}
+.eachBookContainer {
+  text-align: center;
+}
+
+.bookCover {
+  width: 450px;
+  transition: width 1s ease;
+}
+@media (max-width: 1440px) {
+  .bookCover {
+    width: 430px;
+  }
+}
+@media (max-width: 1240px) {
+  .bookCover {
+    width: 400px;
+  }
+}
+@media (max-width: 1024px) {
+  .bookCover {
+    width: 360px;
+  }
+}
+@media (max-width: 767px) {
+  .bookCover {
+    width: 320px;
+  }
+}
+@media (max-width: 567px) {
+  .bookCover {
+    width: 300px;
+  }
 }
