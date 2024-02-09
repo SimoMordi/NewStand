@@ -1,4 +1,5 @@
 import React from "react";
+import css from "./About.module.css";
 import Patrick from "../../assets/imgs/Patrick.png";
 import Gallery from "../../components/Gallery/Gallery";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -12,15 +13,19 @@ const About = () => {
     "Patrick is a graduate of the University of Washington with a BA in English Literature and Communication. He began his career working in the newsroom for five years before transitioning into direct service work.",
   ];
   return (
-    <main id="about">
-      <section>
-        <img src={Patrick} alt="Patrick sitting on the stairs" />
-        <p>
+    <main id="about" className={css.aboutSection}>
+      <section className={css.aboutContainer}>
+        <img
+          src={Patrick}
+          className={css.patrickImg}
+          alt="Patrick sitting on the concrete stairs"
+        />
+        <h4 className={css.patrickQuote}>
           “My parents met in Seattle… I was born in Seattle. All of my work has
           been based in Seattle. It doesn't get much more 206 than me.”
-        </p>
+        </h4>
       </section>
-      <section>
+      <section className={css.aboutContent}>
         {aboutContent.map((content, index) => (
           <p key={index}>{content}</p>
         ))}
