@@ -55,9 +55,10 @@ p {
 /* pages, components */
 #footer,
 #books,
-#about {
+#about,
+#contactPage {
   max-width: 1360px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 /* List */
 .list {

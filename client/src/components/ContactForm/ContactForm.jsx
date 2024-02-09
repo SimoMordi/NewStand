@@ -41,6 +41,7 @@ const ContactForm = () => {
             type="text"
             name="name"
             placeholder="Name"
+            required
             value={contactFormData.name}
             onChange={handleChange}
             className={css.nameInput}
@@ -49,6 +50,7 @@ const ContactForm = () => {
             type="email"
             name="email"
             placeholder="Email"
+            required
             value={contactFormData.email}
             onChange={handleChange}
             className={css.emailInput}
@@ -57,6 +59,7 @@ const ContactForm = () => {
             name="message"
             rows="5"
             placeholder="Message"
+            required
             value={contactFormData.message}
             onChange={handleChange}
           ></textarea>
