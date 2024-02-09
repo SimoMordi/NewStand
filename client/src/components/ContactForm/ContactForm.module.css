@@ -1,0 +1,89 @@
+.contactFormSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 99%;
+}
+.contactHeader {
+  margin: 0 auto;
+}
+.contactFormContainer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.contactInfo {
+  text-align: center;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.emailInput,
+.nameInput {
+  padding-left: 5px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 550px;
+  font-size: 1rem;
+  line-height: 150%;
+  transition: width 1s ease;
+}
+.contactForm textarea {
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-left: 5px;
+  padding-top: 5px;
+  line-height: 150%;
+  width: 550px;
+  margin-top: 15px;
+  transition: width 1s ease;
+}
+.submitContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkedLabel {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+@media (max-width: 1440px) {
+  .emailInput,
+  .nameInput,
+  .contactForm textarea {
+    width: 450px;
+  }
+}
+@media (max-width: 1240px) {
+  .emailInput,
+  .nameInput,
+  .contactForm textarea {
+    width: 400px;
+  }
+}
+@media (max-width: 1024px) {
+  .emailInput,
+  .nameInput {
+    width: 330px;
+  }
+  .contactFormContainer textarea {
+    width: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .contactFormContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .emailInput,
+  .nameInput,
+  .contactFormContainer textarea {
+    font-size: 0.875rem;
+  }
+}
