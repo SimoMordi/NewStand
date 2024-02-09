@@ -1,0 +1,6 @@
+.contactPageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 50px 0;
+}
