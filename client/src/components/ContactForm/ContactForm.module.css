@@ -24,20 +24,23 @@
 .nameInput {
   padding: 5px;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid whitesmoke;
   width: 550px;
   font-size: 1rem;
   line-height: 150%;
   transition: width 1s ease;
+  background: none;
 }
 .contactForm textarea {
   border-radius: 5px;
   font-size: 1rem;
-  padding-left: 5px;
+  padding-left: 10px;
   padding-top: 5px;
   line-height: 150%;
   width: 550px;
   margin-top: 15px;
+  border: 1px solid whitesmoke;
+  background: none;
   transition: width 1s ease;
 }
 .submitContainer {

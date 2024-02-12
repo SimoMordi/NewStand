@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from "@mui/icons-material/X";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import css from "./footer.module.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [email, setEmail] = useState({
+    email: "",
+  });
+  // will have to send to the DB to put them in the subscribe email list
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email);
+    setEmail({
+      email: "",
+    });
+  };
+  const handleChange = (e) => {
+    setEmail({ ...email, [e.target.name]: e.target.value });
+  };
   const navLinks = [
     {
       name: "Home",
@@ -17,7 +31,7 @@ const Footer = () => {
     },
     {
       name: "Book",
-      route: "/book",
+      route: "/books",
     },
     {
       name: "Blogs",
@@ -40,42 +54,64 @@ const Footer = () => {
       link: "https://www.linkedin.com/in/pokocha/",
     },
     {
-      name: "Twitter",
-      icon: <XIcon fontSize="large" />,
-      link: "",
-    },
-    {
       name: "Email",
       icon: <MailOutlineIcon fontSize="large" />,
+      link: "mailto:patokocha206@gmail.com?subject=Hello!",
     },
   ];
 
   const currentYear = new Date().getFullYear();
   return (
     <footer id="footer" className={css.footer}>
-      {/* we will include the nav links, social media, and subscribe email */}
-      <div className={css.footerContainer}>
-        <ul className={`${css.navList} list`}>
-          {navLinks.map((link) => (
-            <li key={link.name}>{link.name}</li>
+      <section className={css.footerContainer}>
+        <nav className={css.nav}>
+          <ul className={css.navLinks}>
+            {navLinks.map((nav) => (
+              <li key={nav.name} className={css.navItem}>
+                <Link to={nav.route}>{nav.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className={css.socialMedia}>
+          {socialMedia.map((social, index) => (
+            // Adding a unique key to each item in the loop
+            <a
+              key={index}
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {social.icon}
+            </a>
           ))}
-        </ul>
-        <ul className={`${css.socialMediaList} list`}>
-          {socialMedia.map((icon) => (
-            <li key={icon.name}>{icon.icon}</li>
-          ))}
-        </ul>
-        <form>
-          <input type="text" placeholder="Subscribe to our newsletter" />
-          <button>Subscribe</button>
+        </div>
+        <form onSubmit={handleSubmit} className={css.subscribeForm}>
+          <input
+            type="email"
+            name="email"
+            value={email.email}
+            onChange={handleChange}
+            className={css.emailInput}
+            placeholder="Subscribe for updates"
+            required
+          />
+          <button className="btn">Subscribe</button>
         </form>
-      </div>
-      <div className={css.copyright}>
+      </section>
+      <section className={css.copyright}>
         <p>
-          Designed & Developed by <a href="">Innovis Solution</a>
+          Designed & Developed by{" "}
+          <a
+            href="https://innovissolution.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Innovis Solution
+          </a>
         </p>
-        <p>&copy; {currentYear} - Patrick Okocha II. All rights reserved. </p>
-      </div>
+        <p> &copy; {currentYear} Patrick Okocha II. All rights reserved.</p>
+      </section>
     </footer>
   );
 };
