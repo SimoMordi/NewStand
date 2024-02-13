@@ -1,14 +1,14 @@
 import React from "react";
 
-const Gallery = () => {
+const Testimonials = () => {
   return (
     <section>
       <div className="titleContainer">
-        <h2>Gallery</h2>
+        <h2>Testimonials</h2>
         <span className="line"></span>
       </div>
     </section>
   );
 };
 
-export default Gallery;
+export default Testimonials;

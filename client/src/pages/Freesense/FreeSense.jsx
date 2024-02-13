@@ -16,12 +16,9 @@ const FreeSense = () => {
   // Twitter, Facebook, LinkedIn, any other social media
   const handleShare = () => {};
   const bookSummary = [
-    "I despise marketing, mainly because I don’t know what to call this thing in your hand. I don’t know what to compare this book to. I never gave thought to it… I just sat down and wrote it.",
-    "It’s about life. It’s about pro-spective. Firsthand experience and personal accounts. Wisdom gained and knowledge acquired. It’s about confidence with a little bit of arrogance. Well, a lot of arrogance… But I don’t know, you tell it.",
-    "It’s about accountability and responsibility. It’s about the journey. The roadblocks and check-points. It’s about evaluation and perspective.  It’s about time.",
-    "It’s about time… It’s about time you enter the mind of StandPat. A cool cat from the upper-left.",
-    "You don’t have to know who I am… You just need to know yourself.",
-    "We'll connect just fine.",
+    `Introducing "FreeSense" - a literary journey through life, perspective, and the uncharted territories of personal growth. This anthology of 21 captivating works, including short stories and narrative essays, transcends the ordinary, challenging readers to introspect and question their morality. Written by StandPat, a cool cat from the upper-left, the book is not just about time; it's about the invaluable moments that shape us.`,
+    `"FreeSense" is a unique blend of firsthand experiences, wisdom gained, and knowledge acquired, wrapped in the cool confidence (and maybe a touch of arrogance) that defines StandPat's voice. This collection invites you to enter the mind of an author who despises marketing but passionately embraces the essence of life. It's about accountability, responsibility, and the twists and turns of the journey.`,
+    `Beyond the words, "FreeSense" is a limited-edition print release, featuring a soft-touch cover for a velvety feel and a vibrant design that adds flair to any bookshelf or office. It's not just a book; it's a piece of art waiting to be explored. Get ready to define it for yourself, as StandPat's words resonate, and the narrative unfolds, leaving an indelible mark on your mind and soul. Don't miss the chance to connect with "FreeSense" - where life meets literature, and the extraordinary becomes the ordinary.`,
   ];
   // link to spotify playlist
   const spotifyLink = () => {

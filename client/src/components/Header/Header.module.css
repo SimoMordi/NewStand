@@ -44,6 +44,7 @@
   justify-content: space-between;
   width: 40px;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 .nav .menu .one {

@@ -8,10 +8,19 @@
 .eachBookContainer {
   text-align: center;
 }
+.eachBookContainer h2 {
+  cursor: pointer;
+}
 
 .bookCover {
   width: 450px;
   transition: width 1s ease;
+}
+.bookCover:hover {
+  cursor: pointer;
+  transform: translate(-4px, -4px);
+  box-shadow: 4px 6px 8px rgba(227, 77, 115, 0.5);
+  transition: color 0.3s ease, box-shadow 0.3s ease;
 }
 @media (max-width: 1440px) {
   .bookCover {
