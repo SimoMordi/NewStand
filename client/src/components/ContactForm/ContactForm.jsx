@@ -57,7 +57,7 @@ const ContactForm = () => {
           />
           <textarea
             name="message"
-            rows="5"
+            rows="6"
             placeholder="Message"
             required
             value={contactFormData.message}

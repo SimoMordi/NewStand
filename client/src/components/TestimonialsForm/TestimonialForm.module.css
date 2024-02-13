@@ -27,13 +27,14 @@
   line-height: 150%;
   background: none;
   transition: width 1s ease;
+  color: lightgray;
 }
 .dropdown {
   border: none;
   border-bottom: 1px solid whitesmoke;
   padding-bottom: 5px;
   font-size: 1rem;
-  color: gray;
+  color: grey;
   margin-bottom: 10px;
   width: 550px;
   background: none;
@@ -50,6 +51,7 @@
   border: 1px solid whitesmoke;
   margin-top: 15px;
   transition: width 1s ease;
+  color: lightgray;
 }
 .submitBtn {
   margin-left: auto;

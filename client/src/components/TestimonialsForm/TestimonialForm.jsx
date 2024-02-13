@@ -102,7 +102,7 @@ const TestimonialForm = () => {
           />
           <textarea
             name="testimonial"
-            rows={5}
+            rows="6"
             placeholder="Testimonial"
             required
             value={testimonialFormData.testimonial}

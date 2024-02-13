@@ -1,7 +1,5 @@
-import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-
 import About from "./pages/About/About";
 import Blogs from "./pages/Blogs/Blogs";
 import Contact from "./pages/Contact/Contact";

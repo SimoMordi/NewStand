@@ -1,5 +1,6 @@
 .footer {
   border-top: 1px solid whitesmoke;
+  width: 100%;
 }
 .footerContainer {
   display: flex;
@@ -43,7 +44,7 @@
   padding-bottom: 5px;
   padding-left: 5px;
   font-size: 1rem;
-  color: whitesmoke;
+  color: lightgray;
   line-height: 150%;
   transition: width 1s ease;
 }
