@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import css from "./FreeSense.module.css";
 import SpotifyIcon from "../../assets/Icons/Spotify.png";
 import FrontCover from "../../assets/imgs/BookFrontPage.png";
 import BackCover from "../../assets/imgs/BookBackCover.png";
 import XIcon from "@mui/icons-material/X";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import SliderComponent from "../../components/SliderComponent";
 
 const FreeSense = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const isMobile = windowWidth <= 767;
+
   // A function where it will take you the page when you want to purchase the book
   // Stripe or Woo-commerce
   const handleBuyBook = () => {};
@@ -34,13 +50,14 @@ const FreeSense = () => {
           <img
             src={FrontCover}
             alt="book-cover"
-            className={`${css.bookCover}  ${css.frontCover}`}
+            className={`${css.bookCover} ${css.frontCover}`}
           />
           <img
             src={BackCover}
             alt="book-cover"
-            className={`${css.bookCover}  ${css.backCover}`}
+            className={`${css.bookCover} ${css.backCover}`}
           />
+          {isMobile && <SliderComponent />}
         </div>
         <button className={`btn`} onClick={handleBuyBook}>
           Get a Book!

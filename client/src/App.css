@@ -22,12 +22,24 @@ p {
   font-size: 1.125rem;
   line-height: 150%;
 }
+/* slider css */
 .slider-container {
   z-index: -1;
   width: 300px;
   height: 450px;
+  text-align: center;
 }
-/* slider css */
+
+.gallerySlider {
+  margin: 30px auto;
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+.gallerySlider img {
+  display: block;
+  margin: auto 0;
+}
 .slider-container img {
   width: 300px;
   margin: 0 auto;
@@ -49,28 +61,6 @@ p {
 }
 
 /* end of  slider css */
-@media (max-width: 1024px) {
-  h4 {
-    font-size: 1.25rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    margin: 0 25px;
-  }
-  p {
-    font-size: 1rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1.125rem;
-  }
-}
 /* title layout */
 .titleContainer {
   display: flex;
@@ -129,4 +119,40 @@ p {
 /* List */
 .list {
   list-style-type: none;
+}
+@media (max-width: 767px) {
+  .gallerySlider {
+    width: 320px;
+  }
+  .gallerySlider img {
+    margin: 5px 0;
+  }
+}
+@media (max-width: 567px) {
+  .gallerySlider {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    margin: 0 30px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
 }

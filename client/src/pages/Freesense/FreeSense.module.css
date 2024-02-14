@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 50px;
   align-items: center;
+  margin-bottom: 20px;
 }
 .bookContainer {
   display: flex;
@@ -59,4 +60,11 @@
   }
 }
 @media (max-width: 767px) {
+  .bookCover {
+    display: none;
+  }
+  .bookContent {
+    margin: 25px 0;
+    gap: 20px;
+  }
 }

@@ -1,0 +1,39 @@
+.homeSection {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0 40px;
+}
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.bookContainer {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  align-items: flex-end;
+}
+.one {
+  display: inline-block;
+  transform: rotate(270deg);
+  background-color: #e34d73;
+}
+.two {
+  display: inline-block;
+  transform: rotate(260deg);
+}
+.three {
+  display: inline-block;
+  transform: rotate(265deg);
+}
+.four {
+  display: inline-block;
+  transform: rotate(270deg);
+}
+.five {
+  display: inline-block;
+  transform: rotate(250deg);
+}

@@ -1,0 +1,86 @@
+.bookCover {
+  width: 350px;
+  position: absolute;
+  left: 36%;
+  top: 15%;
+  z-index: 5;
+  transition: width 1s ease;
+}
+.upperRight {
+  width: 300px;
+  position: absolute;
+  left: 65%;
+  transition: width 1s ease;
+}
+.lowerRight {
+  width: 300px;
+  position: absolute;
+  left: 67%;
+  top: 48%;
+  transition: width 1s ease;
+}
+.upperLeft {
+  width: 300px;
+  position: absolute;
+  left: 10%;
+  transition: width 1s ease;
+}
+.lowerLeft {
+  width: 300px;
+  position: absolute;
+  left: 10%;
+  top: 33%;
+  transition: width 1s ease;
+}
+.galleryContainer {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  height: 750px;
+  transition: width 1s ease;
+}
+@media (max-width: 1240px) {
+  .lowerLeft,
+  .lowerRight,
+  .upperLeft,
+  .upperRight {
+    width: 275px;
+  }
+  .bookCover {
+    width: 325px;
+  }
+  .galleryContainer {
+    width: 90%;
+    height: 700px;
+  }
+}
+@media (max-width: 1024px) {
+  .lowerLeft,
+  .lowerRight,
+  .upperLeft,
+  .upperRight {
+    width: 250px;
+  }
+  .bookCover {
+    width: 300px;
+  }
+  .galleryContainer {
+    height: 650px;
+  }
+}
+@media (max-width: 800px) {
+  .lowerLeft,
+  .lowerRight,
+  .upperLeft,
+  .upperRight {
+    width: 225px;
+  }
+  .bookCover {
+    width: 275px;
+  }
+}
+@media (max-width: 767px) {
+  .galleryContainer {
+    display: none;
+  }
+}

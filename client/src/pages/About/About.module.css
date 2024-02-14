@@ -32,7 +32,7 @@
 }
 @media (max-width: 767px) {
   .aboutSection {
-    gap: 20px;
+    gap: 30px;
   }
   .aboutContainer {
     flex-direction: column-reverse;
