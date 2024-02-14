@@ -1,0 +1,25 @@
+.border {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+.testimonialSlider {
+  margin: 50px auto;
+  height: auto;
+  padding: 0 30px;
+}
+.testimonialContainer {
+  display: flex !important;
+  gap: 50px;
+  padding: 0 50px;
+  align-items: center;
+}
+.name {
+  float: right;
+  margin-top: 20px;
+}
+@media (max-width: 1024px) {
+  .testimonialContainer {
+    flex-direction: column-reverse;
+  }
+}
