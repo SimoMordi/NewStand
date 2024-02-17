@@ -46,8 +46,8 @@ const TestimonialSlider = () => {
   return (
     <div className={` ${css.testimonialSlider}`}>
       <Slider {...settings}>
-        {testimonials.map((item) => (
-          <div className={css.testimonialContainer}>
+        {testimonials.map((item, index) => (
+          <div className={css.testimonialContainer} key={index}>
             <img src={item.img} alt="" />
             <div>
               <p>{item.testimonial}</p>

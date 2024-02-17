@@ -45,6 +45,7 @@ const ContactForm = () => {
             value={contactFormData.name}
             onChange={handleChange}
             className={css.nameInput}
+            autoComplete="name"
           />
           <input
             type="email"
@@ -54,6 +55,7 @@ const ContactForm = () => {
             value={contactFormData.email}
             onChange={handleChange}
             className={css.emailInput}
+            autoComplete="email"
           />
           <textarea
             name="message"
@@ -62,6 +64,7 @@ const ContactForm = () => {
             required
             value={contactFormData.message}
             onChange={handleChange}
+            autoComplete="off"
           ></textarea>
           <div className={css.submitContainer}>
             <label className={css.checkedLabel}>

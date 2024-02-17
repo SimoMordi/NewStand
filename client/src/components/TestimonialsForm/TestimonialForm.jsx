@@ -64,6 +64,7 @@ const TestimonialForm = () => {
             value={testimonialFormData.name}
             onChange={handleChange}
             className={css.name}
+            autoComplete="name"
           />
           <input
             type="email"
@@ -73,6 +74,7 @@ const TestimonialForm = () => {
             value={testimonialFormData.email}
             onChange={handleChange}
             className={css.email}
+            autoComplete="email"
           />
           <select
             name="relationship"
@@ -95,7 +97,7 @@ const TestimonialForm = () => {
           <input
             type="file"
             name="file"
-            id=""
+            id="file"
             accept=".jpg, .jpeg, .png"
             onChange={handleChange}
             // value={testimonialFormData.file}
@@ -108,6 +110,7 @@ const TestimonialForm = () => {
             value={testimonialFormData.testimonial}
             onChange={handleChange}
             className={css.testimonial}
+            autoComplete="off"
           ></textarea>
           <button type="submit" className={`btn ${css.submitBtn}`}>
             Submit

@@ -95,6 +95,7 @@ const Footer = () => {
             className={css.emailInput}
             placeholder="Subscribe for updates"
             required
+            autoComplete="email"
           />
           <button className="btn">Subscribe</button>
         </form>
