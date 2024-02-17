@@ -10,9 +10,9 @@ const Testimonials = () => {
         <h2>Testimonials</h2>
         <span className="line"></span>
       </div>
-      <img src={border} alt="border" className={css.border} />
+      {/* <img src={border} alt="border" className={css.border} /> */}
       <TestimonialSlider />
-      <img src={border} alt="border" className={css.border} />
+      {/* <img src={border} alt="border" className={css.border} /> */}
     </section>
   );
 };

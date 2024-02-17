@@ -48,6 +48,7 @@
 .submitContainer {
   display: flex;
   align-items: center;
+  gap: 20px;
   justify-content: space-between;
 }
 .checkedLabel {
@@ -77,10 +78,10 @@
 @media (max-width: 1024px) {
   .emailInput,
   .nameInput {
-    width: 330px;
+    width: 300px;
   }
   .contactFormContainer textarea {
-    width: 330px;
+    width: 300px;
   }
 }
 @media (max-width: 767px) {

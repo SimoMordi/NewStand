@@ -60,11 +60,20 @@
   }
 }
 @media (max-width: 767px) {
+  .bookSection {
+    gap: 25px;
+  }
   .bookCover {
     display: none;
   }
   .bookContent {
     margin: 25px 0;
     gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .bookSection {
+    gap: 10px;
+    margin-bottom: 30px;
   }
 }

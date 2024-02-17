@@ -99,7 +99,8 @@ p {
 #about,
 #contactPage,
 #freeSense,
-#home {
+#home,
+#blogs {
   max-width: 1360px;
   margin: 30px auto;
 }
@@ -130,7 +131,10 @@ p {
 }
 @media (max-width: 567px) {
   .gallerySlider {
-    width: 300px;
+    width: 275px;
+  }
+  .slider-container {
+    width: 275px;
   }
 }
 

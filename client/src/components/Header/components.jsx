@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/Logo/logo.png";
 import css from "./Header.module.css";
 import { Link, useNavigate, useLocation } from "react-router-dom";
@@ -33,6 +33,9 @@ const Header = () => {
   const handleClickMenu = () => {
     setIsHomePageOpen(!isHomePageOpen);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <nav className={css.nav} id="nav">
       <img
