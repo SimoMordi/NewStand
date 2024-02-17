@@ -8,6 +8,8 @@ import Books from "./pages/Books/Books";
 import Header from "./components/Header/components";
 import Footer from "./components/Footer/components";
 import FreeSense from "./pages/Freesense/FreeSense";
+import Blog1 from "./pages/Blog1/Blog1";
+
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path="/freeSense" element={<FreeSense />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Blog1" element={<Blog1 />} />
       </Routes>
+
       <Footer />
     </>
   );
