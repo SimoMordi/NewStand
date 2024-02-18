@@ -9,9 +9,12 @@ import Header from "./components/Header/components";
 import Footer from "./components/Footer/components";
 import FreeSense from "./pages/Freesense/FreeSense";
 import Blog1 from "./pages/Blog1/Blog1";
+import PopUp from "./pages/PopupPage/PopupPage";
+
 
 
 function App() {
+  
   return (
     <>
       <Header />
@@ -24,7 +27,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/Blog1" element={<Blog1 />} />
       </Routes>
-
+      
+      <PopUp />
       <Footer />
     </>
   );
